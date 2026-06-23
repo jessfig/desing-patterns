@@ -1,6 +1,6 @@
-from app.universidade.factory.aluno_graduacao_factory import AlunoGraduacaoFactory
-from app.universidade.factory.aluno_intercambio_factory import AlunoIntercambioFactory
-from app.universidade.service.sistema_matriculas import SistemaMatriculas
+from app.src.universidade.domain.factory.aluno_graduacao_factory import AlunoGraduacaoFactory
+from app.src.universidade.domain.factory.aluno_intercambio_factory import AlunoIntercambioFactory
+from app.src.universidade.service.sistema_matriculas import SistemaMatriculas
 
 
 def main():

@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from app.universidade.entidades.aluno.aluno import Aluno
+from app.src.universidade.domain.entidades.aluno.aluno import Aluno
 
 
 class AlunoFactory(ABC):

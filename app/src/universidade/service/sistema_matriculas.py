@@ -1,4 +1,4 @@
-from app.universidade.factory.aluno_factory import AlunoFactory
+from app.src.universidade.domain.factory.aluno_factory import AlunoFactory
 
 
 class SistemaMatriculas:
