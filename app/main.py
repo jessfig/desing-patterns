@@ -1,16 +1,16 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+from app.src.universidade.infraestructure.database.session import SessionLocal
+from app.src.universidade.infraestructure.database.repositories.aluno_repository_sqlalchemy import AlunoRepositorySqlAlchemy
+from app.src.universidade.application.use_cases.matricular_aluno import MatricularAlunoUseCase
+from app.src.universidade.domain.factories.aluno_factory import AlunoFactory
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def main():
+    session = SessionLocal()
+    repository = AlunoRepositorySqlAlchemy(session)
+    factory = AlunoFactory()
+    use_case = MatricularAlunoUseCase(factory, repository)
+    use_case.matricular_aluno(nome="Edy", matricula=888, tipo="GRADUACAO")
+    aluno = use_case.consultar_matricula(matricula=888)
+    print(f"Nome: {aluno.nome}, Matricula: {aluno.matricula}")
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+main()
