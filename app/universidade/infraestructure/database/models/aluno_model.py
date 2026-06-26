@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String
-from src.universidade.infraestructure.database.base import Base
+from universidade.infraestructure.database.base import Base
 
 
 class AlunoModel(Base):

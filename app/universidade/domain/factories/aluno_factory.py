@@ -1,7 +1,7 @@
-from src.universidade.domain.entidades.aluno.aluno import Aluno
-from src.universidade.domain.entidades.aluno.aluno_intercambio import AlunoIntercambio
-from src.universidade.domain.entidades.aluno.aluno_graduacao import AlunoGraduacao
-from src.universidade.domain.entidades.aluno.aluno_pos_graduacao import AlunoPosGraduacao
+from universidade.domain.entidades.aluno.aluno import Aluno
+from universidade.domain.entidades.aluno.aluno_intercambio import AlunoIntercambio
+from universidade.domain.entidades.aluno.aluno_graduacao import AlunoGraduacao
+from universidade.domain.entidades.aluno.aluno_pos_graduacao import AlunoPosGraduacao
 
 
 class AlunoFactory:

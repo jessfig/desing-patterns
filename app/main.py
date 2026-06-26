@@ -1,16 +1,11 @@
-from app.src.universidade.infraestructure.database.session import SessionLocal
-from app.src.universidade.infraestructure.database.repositories.aluno_repository_sqlalchemy import AlunoRepositorySqlAlchemy
-from app.src.universidade.application.use_cases.matricular_aluno import MatricularAlunoUseCase
-from app.src.universidade.domain.factories.aluno_factory import AlunoFactory
+from container import create_matricular_aluno
 
 
 def main():
-    session = SessionLocal()
-    repository = AlunoRepositorySqlAlchemy(session)
-    factory = AlunoFactory()
-    use_case = MatricularAlunoUseCase(factory, repository)
+    use_case = create_matricular_aluno()
     use_case.matricular_aluno(nome="Edy", matricula=888, tipo="GRADUACAO")
+    print(f"Aluno Matriculado com Sucesso!")
     aluno = use_case.consultar_matricula(matricula=888)
-    print(f"Nome: {aluno.nome}, Matricula: {aluno.matricula}")
+    print(f"Aluno Consultado com Sucesso - Nome: {aluno.nome}, Matricula: {aluno.matricula}")
 
 main()
