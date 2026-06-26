@@ -1,7 +1,7 @@
-from src.universidade.infraestructure.database.repositories.aluno_repository import AlunoRepository
-from src.universidade.infraestructure.database.models.aluno_model import AlunoModel
-from src.universidade.domain.entidades.aluno.aluno import Aluno
-from src.universidade.infraestructure.mappers.aluno_mapper import AlunoMapper
+from universidade.infraestructure.database.repositories.aluno_repository import AlunoRepository
+from universidade.infraestructure.database.models.aluno_model import AlunoModel
+from universidade.domain.entidades.aluno.aluno import Aluno
+from universidade.infraestructure.mappers.aluno_mapper import AlunoMapper
 
 
 class AlunoRepositorySqlAlchemy(AlunoRepository):

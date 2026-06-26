@@ -1,7 +1,7 @@
-from app.src.universidade.infraestructure.database.session import SessionLocal
-from app.src.universidade.infraestructure.database.repositories.aluno_repository_sqlalchemy import AlunoRepositorySqlAlchemy
-from app.src.universidade.application.use_cases.matricular_aluno import MatricularAlunoUseCase
-from app.src.universidade.domain.factories.aluno_factory import AlunoFactory
+from universidade.infraestructure.database.session import SessionLocal
+from universidade.infraestructure.database.repositories.aluno_repository_sqlalchemy import AlunoRepositorySqlAlchemy
+from universidade.application.use_cases.matricular_aluno import MatricularAlunoUseCase
+from universidade.domain.factories.aluno_factory import AlunoFactory
 
 
 def main():

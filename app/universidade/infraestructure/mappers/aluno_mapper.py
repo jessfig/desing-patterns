@@ -1,5 +1,5 @@
-from src.universidade.domain.entidades.aluno.aluno import Aluno
-from src.universidade.infraestructure.database.models.aluno_model import AlunoModel
+from universidade.domain.entidades.aluno.aluno import Aluno
+from universidade.infraestructure.database.models.aluno_model import AlunoModel
 
 
 class AlunoMapper:

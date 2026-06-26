@@ -1,5 +1,5 @@
-from src.universidade.domain.factories.aluno_factory import AlunoFactory
-from src.universidade.infraestructure.database.repositories.aluno_repository import AlunoRepository
+from universidade.domain.factories.aluno_factory import AlunoFactory
+from universidade.infraestructure.database.repositories.aluno_repository import AlunoRepository
 
 
 class MatricularAlunoUseCase:

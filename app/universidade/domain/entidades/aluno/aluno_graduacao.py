@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from src.universidade.domain.entidades.aluno.aluno import Aluno
+from universidade.domain.entidades.aluno.aluno import Aluno
 
 
 @dataclass
